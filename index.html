@@ -319,6 +319,10 @@ thead th,th:first-child,#goalsPage th{background:#dcebdd;color:#315b41}
 #lifePage .life-marks span:nth-child(2){color:#17603f;font-size:15px}
 #lifePage .life-progress{font-size:14px;font-weight:700;color:#2d6b4a;background:#ffffffaa;border:1px solid #b6d3bc;border-radius:30px;width:fit-content;margin:22px auto 0;padding:8px 22px;box-shadow:0 2px 5px #335c3d13}
 @media(max-width:650px){#lifePage .life-timeline{padding:29px 10px 14px}#lifePage .life-marks{font-size:11px}#lifePage .life-marks span:nth-child(2){font-size:11px}#lifePage #lifeBarPercent{font-size:11px;right:5px}}
+
+/* Prevent duplicate title: fully conceal lettering baked into the banner image. */
+#placesPage .hero-places::after{background:linear-gradient(90deg,#faf8ed 0%,#faf8ed 46%,rgba(250,248,237,.98) 49%,rgba(250,248,237,.65) 56%,rgba(250,248,237,0) 69%)!important;}
+#placesPage .hero-places .hero-content{z-index:3!important;}
 </style></head><body><main><nav class="app-tabs"><button class="selected" id="tabGoals" type="button">✨ やりたいことリスト</button><button class="" id="tabSleep" type="button">🌙 睡眠記録</button><button class="" id="tabPlaces" type="button">📍 おでかけ記録</button><button class="" id="tabCoffee" type="button">☕ コーヒー記録</button><button class="" id="tabLife" type="button">🌿 人生カウントダウン</button></nav>
 <div id="goalsPage">
 <div class="page-hero hero-goals"><div class="hero-content"><h1>✨ やりたいことリスト</h1></div></div>
