@@ -323,6 +323,13 @@ thead th,th:first-child,#goalsPage th{background:#dcebdd;color:#315b41}
 /* Prevent duplicate title: fully conceal lettering baked into the banner image. */
 #placesPage .hero-places::after{background:linear-gradient(90deg,#faf8ed 0%,#faf8ed 46%,rgba(250,248,237,.98) 49%,rgba(250,248,237,.65) 56%,rgba(250,248,237,0) 69%)!important;}
 #placesPage .hero-places .hero-content{z-index:3!important;}
+
+/* スマートフォン：一覧表の値を改行せず横スクロールで表示 */
+#goalsPage .g-table-wrap{overflow-x:auto;overflow-y:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+#goalsPage .g-table-wrap table{width:max-content;min-width:100%;table-layout:auto}
+#goalsPage .g-table-wrap th,#goalsPage .g-table-wrap td{white-space:nowrap!important;overflow-wrap:normal!important;word-break:normal!important;min-width:max-content!important}
+#goalsPage .g-table-wrap td.g-name{min-width:240px!important}
+#goalsPage .g-table-wrap td.g-due{min-width:74px!important}
 </style></head><body><div id="cloudSyncBar" style="max-width:1220px;margin:8px auto 0;padding:10px 14px;border:1px solid #b9ceba;border-radius:13px;background:#fffaf0;display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#31533f;font-size:13px"><span id="cloudSyncStatus" style="flex:1;min-width:180px">☁️ クラウド同期：未ログイン</span><button id="cloudLogin" type="button" style="width:auto;padding:8px 15px">Googleでログイン</button><button id="cloudLogout" type="button" hidden style="width:auto;padding:8px 15px;background:#e5eee1;color:#31533f">ログアウト</button></div><main><nav class="app-tabs"><button class="selected" id="tabGoals" type="button">✨ やりたいことリスト</button><button class="" id="tabSleep" type="button">🌙 睡眠記録</button><button class="" id="tabPlaces" type="button">📍 おでかけ記録</button><button class="" id="tabCoffee" type="button">☕ コーヒー記録</button><button class="" id="tabLife" type="button">🌿 人生カウントダウン</button></nav>
 <div id="goalsPage">
 <div class="page-hero hero-goals"><div class="hero-content"><h1>✨ やりたいことリスト</h1></div></div>
